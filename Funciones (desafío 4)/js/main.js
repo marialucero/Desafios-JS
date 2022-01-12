@@ -1,7 +1,9 @@
-
 const cantidadMaterias = 4; 
 let cantidadAlumnos = parseFloat(prompt("Ingrese la cantidad de alumnos")); 
 
+function promedio (sumaNotas,cantidadMaterias) {
+    return (sumaNotas)/cantidadMaterias; 
+}
 
 for (let i=0; i<cantidadAlumnos; i++) {
     let ingresarNombreAlumno = prompt("Ingrese el nombre del alumno");
@@ -13,11 +15,3 @@ for (let i=0; i<cantidadAlumnos; i++) {
     let promedioFinal = promedio(sumaNotas,cantidadMaterias);
     alert("Promedio de "+ingresarNombreAlumno+ ": "+promedioFinal);
 }
-
-function promedio (sumaNotas,cantidadMaterias) {
-    return (sumaNotas)/cantidadMaterias; 
-}
-
-
-
-
